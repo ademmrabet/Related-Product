@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Cardd from './Cardd'
 
 export default class App extends Component {
   constructor(){
@@ -10,13 +11,13 @@ export default class App extends Component {
   }
   componentDidMount(){
     axios.get(' https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfe/products',{
-      headers:{Authorization:"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"}
+      headers:{Authorization:"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"}
     }).then((res)=>{this.setState({array:res.data})})
   }
   render() {
     return (
       <div>
-        {this.state.array.map(element=><h1 key={element.id}>{element.name}</h1>)}
+       <Cardd products ={this.state.array} />
       </div>
     )
   }
