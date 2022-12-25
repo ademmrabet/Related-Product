@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import Cardd from './Cardd'
+import "./index.css"
 
 export default class App extends Component {
   constructor(){

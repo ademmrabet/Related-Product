@@ -10,7 +10,7 @@ import { CardActionArea } from '@mui/material';
 export default function Cardd({products}) {
  console.log(products)
   return (
-    <div className="card">
+    <div className="cardd">
       {products.map(el=>{
         return(
           <Card sx={{ maxWidth: 345 }}>
